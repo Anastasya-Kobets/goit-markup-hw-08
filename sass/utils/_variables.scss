@@ -1,0 +1,25 @@
+$header-color: #212121;
+$text-color: #757575;
+$accent-color: #2196f3;
+$light-color: #ffffff;
+$fon-color: #2f303a;
+$team-color: #f5f4fa;
+$border-color: #ececec;
+$icon-color: #afb1b8;
+$border-shadow-color: #eeeeee;
+$hover-portfolio: rgba(33, 150, 243, 0.9);
+
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+}
+@mixin bordered ($color, $px, $round: false){
+  border: $px solid $color;
+
+  @if $round {
+    border-radius: 4px;
+  }
+}
+
+
+//@include bordered($header-color, 2px, true);

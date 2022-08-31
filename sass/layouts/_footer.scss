@@ -1,0 +1,142 @@
+/*Футер*/
+.footer {
+  background-color: $fon-color;
+  padding: 60px 0;
+}
+.footer__logo-text {
+  color: $accent-color;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+.footer__flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.footer__logo {
+  color: $light-color;
+}
+.addresses-footer {
+  font-style: normal;
+  margin-top: 20px;
+  display: flex;
+}
+.addresses-footer__mail {
+  margin-top: 9px;
+}
+.addresses-footer__link {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $light-color;
+  }
+}
+.addresses-footer__gps {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $light-color;
+}
+
+.addresses-footer__tel {
+  margin-top: 9px;
+}
+.footer__card {
+  margin-left: 70px;
+}
+.footer__text {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $light-color;
+}
+.footer__item {
+  display: flex;
+  margin-top: 20px;
+}
+.footer__list {
+  margin-right: 10px;
+}
+.footer__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: $light-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.footer__svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .footer__icon:hover &,
+  .footer__icon:focus & {
+    fill: $light-color;
+  }
+}
+
+
+.footer-input {
+  margin-left: auto;
+}
+.footer-input__input {
+
+  @include bordered(rgba(255, 255, 255, 0.3), 1px, true);
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+
+  background-color: $fon-color;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  color: white;
+  margin-top: 20px;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-input__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $light-color;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  background: $accent-color;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+
+  justify-content: center;
+  padding: 10px 24px 10px 28px;
+  margin-left: 12px;
+  outline: none;
+}
+.footer-input__svg {
+  fill: $light-color;
+  margin-left: 10px;
+}

@@ -1,0 +1,62 @@
+.checkbox-modal {
+  margin-bottom: 30px;
+}
+.checkbox-modal__text {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  display: inline-block;
+  color: $text-color;
+}
+.checkbox-modal__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkbox-modal__icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  vertical-align: middle;
+  background: $light-color;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+  0 2px 1px rgba(0, 0, 0, 0.2);
+
+  @include bordered($header-color, 2px, true);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .checkbox-modal__input:hover + &,
+  .checkbox-modal__input:focus + & {
+    /*border: 2px solid $accent-color*/
+    border-color: $accent-color;
+  }
+  .checkbox-modal__input:checked + & {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
+
+.checkbox-modal__agreement {
+  vertical-align: middle;
+}
+.checkbox-modal__link {
+  color: $accent-color;
+}
+.checkbox-modal__btn {
+  cursor: pointer;
+  background: $accent-color;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  display: block;
+  line-height: 30px;
+  border: 0;
+  position: relative;
+  letter-spacing: 0.06em;
+  color: $light-color;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+}

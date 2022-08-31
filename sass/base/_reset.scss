@@ -1,0 +1,46 @@
+body {
+  font-family: var(--main-font);
+  color: $header-color;
+  background-color: $light-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--header-color);
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.contact {
+  margin-left: auto;
+}
+
+textarea {
+  resize: none;
+}

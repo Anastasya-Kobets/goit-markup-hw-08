@@ -1,0 +1,29 @@
+.clients {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+.clients__icon {
+  width: 170px;
+  height: 92px;
+  @include bordered($icon-color, 1px, true);
+  align-items: center;
+  justify-content: center;
+  fill: $icon-color;
+  display: flex;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+.clients__svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .clients__icon:hover &,
+  .clients__icon:focus & {
+    fill: $accent-color;
+  }
+}
+
+
