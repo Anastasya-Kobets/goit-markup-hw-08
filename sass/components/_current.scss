@@ -10,5 +10,9 @@
     background-color: $accent-color;
     bottom: -1.5%;
     left: 0;
+
+    @at-root .is-opened & {
+      display: none;
+    }
   }
 }
