@@ -2,6 +2,10 @@
 .footer {
   background-color: $fon-color;
   padding: 60px 0;
+  margin-top: 60px;
+}
+.footer__container{
+  text-align: center;
 }
 .footer__logo-text {
   color: $accent-color;
@@ -12,8 +16,8 @@
 }
 .footer__flex {
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
 }
 .footer__logo {
   color: $light-color;
@@ -36,6 +40,10 @@
   &:focus {
     color: $light-color;
   }
+  font-weight: 400;
+  text-align: center;
+
+
 }
 .addresses-footer__gps {
   font-size: 14px;
@@ -48,7 +56,10 @@
   margin-top: 9px;
 }
 .footer__card {
-  margin-left: 70px;
+  //margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
 }
 .footer__text {
   font-weight: 700;
@@ -56,6 +67,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $light-color;
+  line-height: 16px;
+  text-align: center;
+
+
 }
 .footer__item {
   display: flex;
@@ -90,7 +105,10 @@
 
 
 .footer-input {
-  margin-left: auto;
+  //margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
 }
 .footer-input__input {
 
@@ -98,7 +116,8 @@
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
 
   background-color: $fon-color;
-  width: 358px;
+  //width: 358px;
+  width: 305px;
   height: 50px;
   padding-left: 16px;
   color: white;
@@ -111,6 +130,9 @@
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+  @include mobile{
+    width: 450px;
   }
 }
 
@@ -130,7 +152,7 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
-
+margin-top: 20px;
   justify-content: center;
   padding: 10px 24px 10px 28px;
   margin-left: 12px;

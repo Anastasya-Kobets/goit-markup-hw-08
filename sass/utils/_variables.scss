@@ -21,5 +21,15 @@ $hover-portfolio: rgba(33, 150, 243, 0.9);
   }
 }
 
-
-//@include bordered($header-color, 2px, true);
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }}
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }}
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }}

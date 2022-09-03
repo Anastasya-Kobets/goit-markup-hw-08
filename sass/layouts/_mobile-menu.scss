@@ -1,0 +1,32 @@
+.mob-menu {
+  position: fixed;
+  background-color: gold;
+  font-size: 30px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  &.is-opened{
+    display: block;
+  }
+  z-index: 1;
+
+}
+
+
+.nav-header__mobile-btn {
+  display: inline-block;
+  margin: 0;
+position: absolute;
+  border: none;
+  background-color: transparent;
+
+  right: 0;
+  padding: 22px 22px;
+
+  @include tablet{
+    display: none;
+  }
+}
+

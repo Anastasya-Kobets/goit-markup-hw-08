@@ -3,6 +3,7 @@
   @include bordered($border-color, 1px);
   margin-right: auto;
   margin-left: auto;
+
 }
 .header__logo {
   padding-top: 24px;
@@ -13,7 +14,34 @@
   font-size: 26px;
   line-height: 1.19;
   color: $accent-color;
+  display: inline-block;
+
+@include tablet{
+  margin-right: 88px;
+}
+
 }
 .header__logo-text {
   color: $header-color;
+}
+
+.header__mobile{
+  display: flex;
+  justify-content: space-between;
+  @include tablet{
+    justify-content: flex-start
+  }
+ //@include desktop{
+ //
+ //}
+
+}
+.nav-header__mobile-btn .nav-header__icon-close-menu{
+  display: none;
+}
+.nav-header__mobile-btn.is-opened .nav-header__icon-close-menu{
+  display: block;
+}
+.nav-header__mobile-btn.is-opened .nav-header__icon-menu{
+  display: none;
 }
