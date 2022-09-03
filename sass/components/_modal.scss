@@ -35,6 +35,9 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.9);
   }
+  @include mobile{
+    width: 450px;
+  }
 }
 .modal__icon {
   position: absolute;
@@ -64,6 +67,13 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
+
+
+  @include mobile{
+    font-size: 12px;
+    line-height: 14px;
+
+  }
 }
 .modal__form {
   display: block;

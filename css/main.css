@@ -601,6 +601,11 @@ textarea {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
 
 .modal__icon {
   position: absolute;
@@ -631,6 +636,12 @@ textarea {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
+}
+@media screen and (min-width: 480px) {
+  .modal__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .modal__form {
@@ -711,8 +722,8 @@ textarea {
 }
 
 .checkbox-modal__text {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   display: inline-block;
   color: #757575;
