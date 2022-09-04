@@ -7,7 +7,12 @@
   letter-spacing: 0.03em;
   display: inline-block;
   color: $text-color;
+  @include desktop{
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
+
 .checkbox-modal__input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -39,7 +44,8 @@
 }
 
 .checkbox-modal__agreement {
-  vertical-align: middle;
+  vertical-align: text-top;
+  padding-left: 8px;
 }
 .checkbox-modal__link {
   color: $accent-color;

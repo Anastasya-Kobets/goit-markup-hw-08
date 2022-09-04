@@ -3,9 +3,8 @@
   gap: 30px;
   flex-wrap: wrap;
   margin-bottom: 60px;
-  @include tablet {
-    justify-content: center;
-  }
+  justify-content: center;
+
 
 }
 .clients__icon {

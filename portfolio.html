@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Портфоліо</title>
+  <title>Студія</title>
   <link
           href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;family=Roboto:wght@400;500;700;900&amp;display=swap"
           rel="stylesheet"
@@ -62,6 +62,7 @@
               ></use>
             </svg>
           </button>
+
           <div class="mob-menu" id="mob-menu" data-menu>
 
             <div class="mob-menu-top">
@@ -69,88 +70,102 @@
               <ul class="">
 
                 <li class="">
-                  <a href="./index.html" class="nav-header__link  link"
+                  <a href="./index.html" class="mob-menu-top__link  link"
                   >Студія</a
                   >
                 </li>
                 <li class="nav-header__title">
-                  <a href="./portfolio.html" class="nav-header__link current link"
+                  <a href="./portfolio.html" class="mob-menu-top__link current link"
                   >Портфоліо</a
                   >
                 </li>
                 <li class="nav-header__title">
-                  <a href="#" class="nav-header__link link">Контакти</a>
+                  <a href="#" class="mob-menu-top__link link">Контакти</a>
                 </li>
               </ul>
-              <ul class="nav-header contact">
-                <li class="nav-header__title">
-                  <a
-                          href="mailto:info@devstudio.com"
-                          class="nav-header__link nav-header__contacts link"
-                  >
-                    <svg class="nav-header__icon" width="16" height="12">
-                      <use
-                              href="./images/symbol-defs.svg#icon-envelope-hover"
-                              class=""
-                      ></use>
-                    </svg>
-                    <span>info@devstudio.com</span>
-                  </a>
-                </li>
-                <li class="nav-header__title">
-                  <a
-                          href="tel:+380961111111"
-                          class="nav-header__link nav-header__contacts link"
-                  >
-                    <svg class="nav-header__icon" width="10" height="16">
-                      <use
-                              href="./images/symbol-defs.svg#icon-Vectors"
-                              class=""
-                      ></use>
-                    </svg>
-                    <span>+38 096 111 11 11</span></a
-                  >
-                </li>
-              </ul>
+              <div >
+                <ul class="contact-mob">
+                  <li class="nav-header__title">
+                    <a
+                            href="tel:+380961111111"
+                            class="mob-menu-contact__tel nav-header__contacts link"
+                    >
 
+                      <span>+38 096 111 11 11</span></a
+                    >
+                  </li>
+                  <li class="nav-header__title">
+                    <a
+                            href="mailto:info@devstudio.com"
+                            class="mob-menu-contact__mail nav-header__contacts link"
+                    >
+
+                      <span>info@devstudio.com</span>
+
+                    </a>
+                  </li>
+
+                </ul>
+                <ul class="social">
+                  <li class="social__item">
+                    <a href="" class="social__link  link"
+                    >Instagram</a
+                    >
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link link"
+                    >Twitter</a
+                    >
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link  link"
+                    >Facebook</a
+                    >
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link link"
+                    >LinkedIn</a
+                    >
+                  </li>
+
+                </ul>
+              </div>
             </div>
           </div>
+
+
+          <!-- контакты -->
+          <ul class="nav-header-contact contact">
+            <li class="nav-header__title-contact">
+              <a
+                      href="mailto:info@devstudio.com"
+                      class="nav-header-contact__link nav-header__contacts link"
+              >
+                <svg class="nav-header__icon" width="16" height="12">
+                  <use
+                          href="./images/symbol-defs.svg#icon-envelope-hover"
+                          class=""
+                  ></use>
+                </svg>
+                <span>info@devstudio.com</span>
+              </a>
+            </li>
+            <li class="nav-header__title-contact">
+              <a
+                      href="tel:+380961111111"
+                      class="nav-header-contact__link nav-header__contacts link"
+              >
+                <svg class="nav-header__icon" width="10" height="16">
+                  <use
+                          href="./images/symbol-defs.svg#icon-Vectors"
+                          class=""
+                  ></use>
+                </svg>
+                <span>+38 096 111 11 11</span></a
+              >
+            </li>
+          </ul>
         </nav>
-
-
-
-        <!-- контакты -->
-        <ul class="nav-header contact">
-          <li class="nav-header__title">
-            <a
-                    href="mailto:info@devstudio.com"
-                    class="nav-header__link nav-header__contacts link"
-            >
-              <svg class="nav-header__icon" width="16" height="12">
-                <use
-                        href="./images/symbol-defs.svg#icon-envelope-hover"
-                        class=""
-                ></use>
-              </svg>
-              <span>info@devstudio.com</span>
-            </a>
-          </li>
-          <li class="nav-header__title">
-            <a
-                    href="tel:+380961111111"
-                    class="nav-header__link nav-header__contacts link"
-            >
-              <svg class="nav-header__icon" width="10" height="16">
-                <use
-                        href="./images/symbol-defs.svg#icon-Vectors"
-                        class=""
-                ></use>
-              </svg>
-              <span>+38 096 111 11 11</span></a
-            >
-          </li>
-        </ul>
-
       </div>
 
     </header>
@@ -158,9 +173,9 @@
     <main>
       <!--Кнопки-->
       <section class="portfolio">
-        <div class="container">
+        <div class="">
           <h1 class="visually-hidden">Сторінка Портфоліо</h1>
-          <ul class="portfolio__item">
+          <ul class="portfolio__item container">
             <li>
               <button type="button" class="portfolio__btn current-btn">
                 Усі
@@ -185,11 +200,19 @@
               <li class="portfolio__cart">
                 <a href="" class="portfolio__img link">
                   <div class="portfolio__position">
+                    <picture>
+                      <source
+                              srcset="
+                    /images/portf1-1x-min.jpg 1x,
+                    /images/portf1-2x-min.jpg 2x
+                  "
+                              media="(max-width:767px)"
+                      />
                     <img
                       src="./images/technoquack.jpeg"
                       alt="technoquack"
                       width="370"
-                    />
+                    /></picture>
                     <div class="portfolio__modal">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -206,7 +229,15 @@
               <li class="portfolio__cart">
                 <a href="" class="portfolio__img link">
                   <div class="portfolio__position">
-                    <img src="./images/poster.jpg" alt="poster" width="370" />
+                    <picture>
+                      <source
+                              srcset="
+                    /images/portf2-1x-min.jpg 1x,
+                    /images/portf2-1x-min.jpg 2x
+                  "
+                              media="(max-width:767px)"
+                      />
+                      <img src="./images/poster.jpg" alt="poster" width="370" /></picture>
                     <div class="portfolio__modal">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -225,11 +256,19 @@
               <li class="portfolio__cart">
                 <a href="" class="portfolio__img link">
                   <div class="portfolio__position">
+                    <picture>
+                      <source
+                              srcset="
+                    /images/portf3-1x-min.jpg 1x,
+                    /images/portf3-2x-min.jpg 2x
+                  "
+                              media="(max-width:767px)"
+                      />
                     <img
                       src="./images/restaurant.jpg"
                       alt="restaurant"
                       width="370"
-                    />
+                    /></picture>
                     <div class="portfolio__modal">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -248,7 +287,15 @@
               <li class="portfolio__cart">
                 <a href="" class="portfolio__img link">
                   <div class="portfolio__position">
-                    <img src="./images/prime.jpg" alt="prime" width="370" />
+                    <picture>
+                      <source
+                              srcset="
+                    /images/portf4-1x-min.jpg 1x,
+                    /images/portf4-2x-min.jpg 2x
+                  "
+                              media="(max-width:767px)"
+                      />
+                      <img src="./images/prime.jpg" alt="prime" width="370" /></picture>
                     <div class="portfolio__modal">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -267,7 +314,15 @@
               <li class="portfolio__cart">
                 <a href="" class="portfolio__img link">
                   <div class="portfolio__position">
-                    <img src="./images/boxes.jpg" alt="boxes" width="370" />
+                    <picture>
+                      <source
+                              srcset="
+                    /images/portf5-1x-min.jpg 1x,
+                    /images/portf5-2x-min.jpg 2x
+                  "
+                              media="(max-width:767px)"
+                      />
+                      <img src="./images/boxes.jpg" alt="boxes" width="370" /></picture>
                     <div class="portfolio__modal">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -286,11 +341,19 @@
               <li class="portfolio__cart">
                 <a href="" class="portfolio__img link">
                   <div class="portfolio__position">
+                    <picture>
+                      <source
+                              srcset="
+                    /images/portf6-1x-min.jpg 1x,
+                    /images/portf6-2x-min.jpg 2x
+                  "
+                              media="(max-width:767px)"
+                      />
                     <img
                       src="./images/inspiration.jpg"
                       alt="inspiration"
                       width="370"
-                    />
+                    /></picture>
                     <div class="portfolio__modal">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -309,7 +372,15 @@
               <li class="portfolio__cart">
                 <a href="" class="portfolio__img link">
                   <div class="portfolio__position">
-                    <img src="./images/limited.jpg" alt="limited" width="370" />
+                    <picture>
+                      <source
+                              srcset="
+                    /images/portf7-1x-min.jpg 1x,
+                    /images/portf7-2x-min.jpg 2x
+                  "
+                              media="(max-width:767px)"
+                      />
+                      <img src="./images/limited.jpg" alt="limited" width="370" /></picture>
                     <div class="portfolio__modal">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -328,7 +399,15 @@
               <li class="portfolio__cart">
                 <a href="" class="portfolio__img link">
                   <div class="portfolio__position">
-                    <img src="./images/lab.jpg" alt="lab" width="370" />
+                    <picture>
+                      <source
+                              srcset="
+                    /images/portf8-1x-min.jpg 1x,
+                    /images/portf8-2x-min.jpg 2x
+                  "
+                              media="(max-width:767px)"
+                      />
+                      <img src="./images/lab.jpg" alt="lab" width="370" /></picture>
                     <div class="portfolio__modal">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -347,11 +426,19 @@
               <li class="portfolio__cart">
                 <a href="" class="portfolio__img link">
                   <div class="portfolio__position">
+                    <picture>
+                      <source
+                              srcset="
+                    /images/portf9-1x-min.jpg 1x,
+                    /images/portf9-2x-min.jpg 2x
+                  "
+                              media="(max-width:767px)"
+                      />
                     <img
                       src="./images/growing-business.jpg"
                       alt="growing-business"
                       width="370"
-                    />
+                    /></picture>
                     <div class="portfolio__modal">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -373,85 +460,87 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer__flex">
-        <div class="footer__container">
-          <a href="#" lang="en" class="footer__logo-text logo link"
-          >Web
-            <span class="footer__logo">Studio</span>
-          </a>
+      <div class="footer__flex">
+        <div class="footer-tablet">
+          <div class="footer__container">
+            <a href="#" lang="en" class="footer__logo-text logo link"
+            >Web
+              <span class="footer__logo">Studio</span>
+            </a>
 
-          <address class="addresses-footer">
-            <ul>
-              <li class="">
-                <a class="addresses-footer__link link addresses-footer__gps">
-                  м. Київ, пр-т Лесі Українки, 26</a
-                >
+            <address class="addresses-footer">
+              <ul>
+                <li class="">
+                  <a class="addresses-footer__link link addresses-footer__gps">
+                    м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="addresses-footer__mail">
+                  <a
+                          href="mailto:info@example.com"
+                          class="addresses-footer__link link"
+                  >info@example.com</a
+                  >
+                </li>
+                <li class="addresses-footer__tel">
+                  <a href="tel:+380991111111" class="addresses-footer__link link"
+                  >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer__card">
+            <p class="footer__text">приєднуйтесь</p>
+            <ul class="footer__item">
+              <li class="footer__list link">
+                <a href="" class="footer__icon">
+                  <svg class="footer__svg" width="20" height="16.25">
+                    <use
+                            href="./images/symbol-defs.svg#icon-instagram-2"
+                            class=""
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="addresses-footer__mail">
-                <a
-                        href="mailto:info@example.com"
-                        class="addresses-footer__link link"
-                >info@example.com</a
-                >
+              <li class="footer__list link">
+                <a href="" class="footer__icon">
+                  <svg class="footer__svg" width="20" height="16.25">
+                    <use
+                            href="./images/symbol-defs.svg#icon-twitter-1"
+                            class=""
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="addresses-footer__tel">
-                <a href="tel:+380991111111" class="addresses-footer__link link"
-                >+38 099 111 11 11</a
-                >
+              <li class="footer__list link">
+                <a href="" class="footer__icon">
+                  <svg class="footer__svg" width="20" height="16.25">
+                    <use
+                            href="./images/symbol-defs.svg#icon-facebook-1"
+                            class=""
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__list link">
+                <a href="" class="footer__icon">
+                  <svg class="footer__svg" width="20" height="16.25">
+                    <use
+                            href="./images/symbol-defs.svg#icon-linkedin-1"
+                            class=""
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="footer__card">
-          <p class="footer__text">приєднуйтесь</p>
-          <ul class="footer__item">
-            <li class="footer__list link">
-              <a href="" class="footer__icon">
-                <svg class="footer__svg" width="20" height="16.25">
-                  <use
-                          href="./images/symbol-defs.svg#icon-instagram-2"
-                          class=""
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__list link">
-              <a href="" class="footer__icon">
-                <svg class="footer__svg" width="20" height="16.25">
-                  <use
-                          href="./images/symbol-defs.svg#icon-twitter-1"
-                          class=""
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__list link">
-              <a href="" class="footer__icon">
-                <svg class="footer__svg" width="20" height="16.25">
-                  <use
-                          href="./images/symbol-defs.svg#icon-facebook-1"
-                          class=""
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__list link">
-              <a href="" class="footer__icon">
-                <svg class="footer__svg" width="20" height="16.25">
-                  <use
-                          href="./images/symbol-defs.svg#icon-linkedin-1"
-                          class=""
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="footer-input">
           <p class="footer__text">Підпишіться на розсилку</p>
-          <form class="footer__flex">
+          <form class="footer__flex-form">
             <label for="email"></label>
             <input
                     type="email"
@@ -471,6 +560,7 @@
         </div>
       </div>
     </footer>
-    <script src="/js/modal.js"></script>
+    <script src="/js/mobile-menu.js"></script>
+
   </body>
 </html>

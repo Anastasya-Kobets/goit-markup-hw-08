@@ -1,6 +1,6 @@
 .header {
 
-  @include bordered($border-color, 1px);
+  border-bottom: 1px solid $border-color;
   margin-right: auto;
   margin-left: auto;
 

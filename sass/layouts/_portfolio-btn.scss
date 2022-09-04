@@ -10,8 +10,10 @@
 
 .portfolio__item {
   display: flex;
-  justify-content: center;
-}
+  //justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+   }
 
 .portfolio__btn {
   font-family: var(--main-font);
