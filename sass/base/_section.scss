@@ -8,8 +8,11 @@
     //padding: 60px 0;
 
   }
-
   @include tablet{
     width: 768px;
   }
+  @include desktop{
+    width: 1200px;
+  }
+
 }

@@ -3,9 +3,16 @@
 
   display: none;
 
-}
+@include desktop{
+  display: flex;
+}}
 .metier {
   margin-top: 50px;
+
+  @include desktop{
+    display: flex;
+    margin-top: 0;
+  }
 }
 .metier__list {
   margin-right: 30px;

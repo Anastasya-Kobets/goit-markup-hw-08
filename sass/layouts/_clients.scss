@@ -1,8 +1,11 @@
 .clients {
   display: flex;
   gap: 30px;
-  flex-wrap: wrap
-
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  @include tablet {
+    justify-content: center;
+  }
 
 }
 .clients__icon {
@@ -19,10 +22,13 @@
   &:focus {
     border-color: $accent-color;
   }
-  @include mobile{
-
+  @include mobile {
     width: 210px;
-    height: 92px;
+
+  }
+  @include tablet {
+    width: 170px;
+
   }
 }
 .clients__svg {
@@ -31,7 +37,4 @@
   .clients__icon:focus & {
     fill: $accent-color;
   }
-
 }
-
-
