@@ -3,7 +3,7 @@
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  text-align: center;
+
   width: 289px;
   padding-bottom: 60px;
   &::before {
@@ -64,6 +64,14 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+
+  @include tablet{
+    text-align: left;
+  }
+  @include desktop{
+    text-align: left;
+  }
 }
 .benefits__text {
   font-size: 14px;
