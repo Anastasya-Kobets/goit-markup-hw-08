@@ -58,6 +58,9 @@
 .portfolio__text {
   padding: 20px 24px;
   border-top: 0;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
 }
 .portfolio__header {
   font-weight: 700;

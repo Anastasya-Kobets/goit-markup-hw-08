@@ -4,14 +4,14 @@
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
-
+  background-position-y: unset;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 4px;
   display: block;
   text-align: center;
-  padding: 118px 0;
+  padding: 112px 0;
 
 
   background-image: linear-gradient(
@@ -56,9 +56,11 @@
 
 
   @include desktop{
-    padding: 200px 0;
+    padding: 194px 0;
     width: 100%;
+    max-width: 1600px;
     height: 600px;
+    background-position-y: unset;
     background-image: linear-gradient(
                     to right,
                     rgba(47, 48, 58, 0.4),
