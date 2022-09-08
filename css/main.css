@@ -960,6 +960,10 @@ textarea {
   margin-left: auto;
   position: relative;
   width: 100%;
+  margin-bottom: 30px;
+}
+.benefits__list:last-child {
+  margin-bottom: 0;
 }
 .benefits__list::before {
   content: "";
@@ -1097,11 +1101,11 @@ textarea {
   background-color: #f5f4fa;
   padding-bottom: 60px;
   margin: 0;
+  padding-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .section-team {
     margin: auto;
-    padding-top: 60px;
   }
 }
 @media screen and (min-width: 480px) {
