@@ -2,10 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
+  flex-grow: 1;
 
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: center;
+  //margin-right: auto;
+  //margin-left: auto;
+  //justify-content: center;
   @include tablet{
     justify-content: flex-start
   }
