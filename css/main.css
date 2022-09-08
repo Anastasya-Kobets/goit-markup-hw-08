@@ -778,8 +778,8 @@ textarea {
   display: flex;
   flex-direction: column;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 19px;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
